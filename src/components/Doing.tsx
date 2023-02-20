@@ -84,55 +84,55 @@ const Doing = (
   );
 
   useEffect(() => {
-    setActive(doing?.listening_to_spotify || currentActivity);
+    setActive(true);
   }, [doing, currentActivity]);
 
   if (!doing || !doing?.discord_status) return null;
 
   return (
     <>
-      {doing?.listening_to_spotify ? (
-        <Container ref={ref} to={'/presence'} {...props}>
+      {(
+        <Container ref={ref} {...props}>
           <h5>
             Listening to Spotify <LiveDot />
           </h5>
           <>
             <ActivityRow>
               <ActivityImageContainer>
-                <ActivityImage src={doing.spotify.album_art_url} />
+                <ActivityImage src={'https://i.scdn.co/image/ab67616d0000b27364840995fe43bb2ec73a241d'} />
                 <ActivitySecondaryImage src={SpotifyLogo} />
               </ActivityImageContainer>
 
               <ActivityInfo>
-                <h5>{doing.spotify.song}</h5>
-                <p>by {doing.spotify.artist}</p>
+                <h5>{'beatles'}</h5>
+                <p>by {'hey'}</p>
               </ActivityInfo>
             </ActivityRow>
           </>
         </Container>
-      ) : null}
-      {currentActivity ? (
-        <Container to={'/presence'} {...props}>
+      )}
+      {(
+        <Container {...props}>
           <h5>Doing something</h5>
           <ActivityRow>
-            {currentActivity.assets ? (
+            {(
               <ActivityImageContainer>
                 <ActivityImage
-                  src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.large_image}.png`}
+                  src={`https://cdn.discordapp.com/app-assets/383226320970055681/565945077491433494.png`}
                 />
                 <ActivitySecondaryImage
-                  src={`https://cdn.discordapp.com/app-assets/${currentActivity.application_id}/${currentActivity.assets.small_image}.png`}
+                  src={`https://cdn.discordapp.com/app-assets/383226320970055681/Visual Studio Code.png`}
                 />
               </ActivityImageContainer>
-            ) : null}
+            ) }
             <ActivityInfo>
-              <h5>{currentActivity.name}</h5>
-              {currentActivity.details ? <p>{currentActivity.details}</p> : null}
-              {currentActivity.state ? <p>{currentActivity.state}</p> : null}
+              <h5>{'Spotify'}</h5>
+              {'Let go'}
+              {'Ark Patrol; Veronika Redd'}
             </ActivityInfo>
           </ActivityRow>
         </Container>
-      ) : null}
+      )}
     </>
   );
 };

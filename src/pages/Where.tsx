@@ -19,32 +19,39 @@ const Where = () => {
       <CoWrapper>
         <Co
           url="https://hop.io"
-          name="Hop"
+          name="Defence Labs"
           iconReference={HopIcon}
-          tagline="Developer tools"
-          role={'CEO, Co-founder & Developer'}
+          tagline="Private Data"
+          role={'Senior Software Engineer & Core Developer'}
           what={
-            'I was tired of the friction and overhead that came with backend deployment. Hop streamlines the deployment experience, with delight included.'
+            `I was tired of the friction and overhead that came with backend deployment. Hop streamlines the deployment experience, with delight included. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            `
           }
         />
         <Co
           url="https://hiven.io"
-          name="Hiven"
+          name="Magazine Luiza"
           iconReference={HivenAppIcon}
-          tagline="Consumer social"
-          role={'Founder & Developer'}
-          what={'I founded Hiven back in 2019 to make it easy for anyone to create premium groups.'}
+          tagline="Retail Company"
+          role={'Senior Software Engineer & Core Developer'}
+          what={`- Responsibilities include product development from the software development perspective, addressing performance or security concerns, as well as acting as architect.
+- High scalable, high impact products through the use of technology, team work and best software engineering practices in high collaborative and challenging environments.
+- At times my role included helping devops or using my previous data-engineering experience to help with developing analytics systems. Though the title suggests more programming-oriented work, much of my time is spent with architectural changes, or advising other developers or staff on possible ways to proceed toward a goal.`}
           acquired
         />
         <Co
           url="https://giggl.app"
-          name="Giggl"
+          name="Anchor Loans"
           iconReference={GigglAppIcon}
-          tagline="Consumer social"
-          role={'Co-founder & Developer'}
+          tagline="Financial Services"
+          role={'Senior Software Engineer & Core Developer'}
           pretext={'2020-2022'}
           what={
-            'I co-founded Giggl back in early 2020 to re-create being together IRL, online. We shifted focus onto Hop.'
+            `- Development of systems controlling the buying and selling processes of properties owned by the company. 
+- Developed a subsystem for neighbor property comparison.
+- Developed web scrapers and internal ETL tools.
+- Developed a system for property construction process management.
+- Experimented with different data structures to maintain a large database efficiently.`
           }
         />
         <Co
@@ -54,7 +61,7 @@ const Where = () => {
           iconReference={HonkAppIcon}
           tagline="Consumer social"
           pretext={'2020'}
-          what={'I helped design and implement the realtime infrastructure at Honk using Elixir.'}
+          what={'- data mining, big data, machine learning, high availability web rest api, web scraping and more.'}
         />
       </CoWrapper>
 

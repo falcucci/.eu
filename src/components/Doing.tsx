@@ -177,7 +177,7 @@ const LiveDot = styled.div`
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #ff5252;
+  background-color: #1dd05d;
   animation: ${fadeInOut} 2s ease-in-out infinite;
 `;
 

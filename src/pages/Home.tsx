@@ -40,14 +40,15 @@ const Home = () => {
       </p>
       <p>
         In my free time, I invest in and create a bunch of new open-source ideas which usually
-        should be useful for myself first or someone close to me. Got a big descision to make? I'm
-        always down to chat and help to put it in practice.
+        should be useful for myself first or someone else close to me. Got a big descision to make?
+        I'm always down to chat and help to put it in practice.
       </p>
 
-      <h3>IKIGAI</h3>
+      <h3>The Ikigai</h3>
       <p>
         Dreaming up ideas and making them come true is where my passion lies. I have a special
-        interest in modern programming languages and green computing.
+        interest in modern programming languages, green computing and anything to improve the
+        human-being daily basis activities.
       </p>
       <p>
         I believe that the software industry should make more significant contributions towards
@@ -59,6 +60,18 @@ const Home = () => {
         This is why I'm especially interested in the <b>Rust programming language</b> which allows
         writing performant and memory-safe applications without the need for a garbage collector or
         a virtual runtime environment, making use of modern syntax abstractions at the same time.
+      </p>
+
+      <p>
+        For those of you interested in how Rust and related technology can accomplish the goal of
+        more eco-friendly software, I strongly recommend you to read the following{' '}
+        <a
+          href="https://www.semanticscholar.org/paper/Energyware-engineering%3A-techniques-and-tools-for-Pereira/c0c935db208abb92133c422bf710b53ded2faf84"
+          target="norel noopen"
+        >
+          dissertation.
+        </a>
+        .
       </p>
     </PageWrapper>
   );

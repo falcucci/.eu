@@ -16,60 +16,49 @@ const Home = () => {
         <Tooltip arrow title={'30th December 1993'}>
           {age}
         </Tooltip>{' '}
-        y/o developer, innovator and open-source enthusiast.
+        y/o software engineer, innovator and open-source enthusiast.
       </p>
       <p>
-        I’m a full-time open-source developer. In 2014, I quit my office job to backpack around
-        Southeast Asia while doing open-source. I have since settled in Bangkok, Thailand, but I’m
-        still doing open-source all day. In early 2018, I became fully funded by the community.
-      </p>
-      <p>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-        et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-        Lorem ipsum dolor sit amet.
-      </p>
-      <p>
-        I design, build and publish products of quality and reliability. Currently, I'm working on{' '}
-        <a href="https://hop.io" target="norel noopen">
-          Hop
+        I design, build and publish products of quality and reliability - currently on{' '}
+        <a href="https://github.com/defence-labs?type=source" target="norel noopen">
+          Defence Labs
         </a>{' '}
-        as CEO.
+        as core Software Engineer.
       </p>
       <p>
-        I specialize in scalable real-time systems & networking, then usually pair that with React
-        for the frontend.
+        I have had a wealth of growing opportunities over several industries and one thing never
+        changes: a business is rarely just the technology that drives it forward.
+      </p>
+      <p>
+        I have worked from several perspectives within companies including devops and application
+        engineering. Each role I held, the most important aspect was communicating with other staff
+        to understand their problem from their point of view to help develop processes that were
+        more efficient and scalable, even if it meant using less technology.
+      </p>
+      <p>
+        <b>The goal is growth of the business, not just growth of the technology that drives it.</b>
+      </p>
+      <p>
+        In my free time, I invest in and create a bunch of new open-source ideas which usually
+        should be useful for myself first or someone close to me. Got a big descision to make? I'm
+        always down to chat and help to put it in practice.
       </p>
 
+      <h3>IKIGAI</h3>
       <p>
-        In my free time, I invest in and help startups with strategy, development, fundraising and
-        more. Got a big descision to make? I'm always down to chat to new founders.
+        Dreaming up ideas and making them come true is where my passion lies. I have a special
+        interest in modern programming languages and green computing.
       </p>
-
-      <h3>A note about networking</h3>
-
       <p>
-        Network engineering sounds like a mundane and boring topic, but it's actually pretty
-        esoteric and interesting when applied on a global scale - it's the backbone of how today's
-        society communicates and operates, yet there's not many young developers engaged in the
-        topic. Contrary to popular belief, the internet still works and operates on very loose trust
-        between people and organizations - I plan to help change this for the better.
+        I believe that the software industry should make more significant contributions towards
+        environmental protection. Great advances have been made to decrease energy consumption and
+        emissions of hardware. However, those are often canceled out by poorly optimized software
+        and resource-intensive runtime environments.
       </p>
-
-      <h3>About Hop</h3>
       <p>
-        Backend deployment sucks. Some companies think Kubernetes is the answer, but it actually
-        introduces way more complexity and operational overhead than needed. Hop streamlines the
-        deployment process: connect your GitHub repository, choose how you want it to run, done. No
-        nodes to manage, configs to write, no hassling around. Hop also grows with you, so if you
-        need more advanced features & customization later on, we've got you covered.
-      </p>
-
-      <p>
-        We've built it on our own physical hardware with our own networking stack - this gives us
-        extreme control over the entire pipeline and allows us to minimize latency at every layer,
-        as well as cost savings and the ability to innovate at a much faster pace. This is what
-        gives us our edge over competitors.
+        This is why I'm especially interested in the <b>Rust programming language</b> which allows
+        writing performant and memory-safe applications without the need for a garbage collector or
+        a virtual runtime environment, making use of modern syntax abstractions at the same time.
       </p>
     </PageWrapper>
   );

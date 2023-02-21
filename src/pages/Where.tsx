@@ -35,7 +35,7 @@ const Where = () => {
           iconReference={MagaluIcon}
           tagline="Retail Company"
           role={'Senior Software Engineer & Core Developer'}
-          pretext={'2022-2018'}
+          pretext={'2018-2022'}
           what={`- Responsibilities include product development from the software development perspective, addressing performance or security concerns, as well as acting as architect.
 - High scalable, high impact products through the use of technology, team work and best software engineering practices in high collaborative and challenging environments.
 - At times my role included helping devops or using my previous data-engineering experience to help with developing analytics systems. Though the title suggests more programming-oriented work, much of my time is spent with architectural changes, or advising other developers or staff on possible ways to proceed toward a goal.`}

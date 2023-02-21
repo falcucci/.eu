@@ -121,14 +121,14 @@ const Doing = (
                   src={`https://cdn.discordapp.com/app-assets/383226320970055681/565945077491433494.png`}
                 />
                 <ActivitySecondaryImage
-                  src={`https://cdn.discordapp.com/app-assets/383226320970055681/Visual Studio Code.png`}
+                  src={`https://cdn.discordapp.com/app-assets/383226320970055681/565945770067623946.png`}
                 />
               </ActivityImageContainer>
             ) }
             <ActivityInfo>
-              <h5>{'Spotify'}</h5>
-              {'Let go'}
-              {'Ark Patrol; Veronika Redd'}
+              <h5>{'Vim'}</h5>
+              <p>{'Editing README.md'}</p>
+              <p>{'~/personal/dicomcrop'}</p>
             </ActivityInfo>
           </ActivityRow>
         </Container>

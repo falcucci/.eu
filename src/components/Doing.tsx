@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { Presence } from '../types/lanyard';
 import SpotifyLogo from '../assets/images/spotify-logo.svg';
+import VimLogo from '../assets/images/vim-logo.svg';
 import { useAtom } from 'jotai';
 import { doingAtom } from '../state/lanyard';
 
@@ -120,9 +121,7 @@ const Doing = (
                 <ActivityImage
                   src={`https://cdn.discordapp.com/app-assets/383226320970055681/565945077491433494.png`}
                 />
-                <ActivitySecondaryImage
-                  src={`https://cdn.discordapp.com/app-assets/383226320970055681/565945770067623946.png`}
-                />
+                <ActivitySecondaryImage src={VimLogo} />
               </ActivityImageContainer>
             ) }
             <ActivityInfo>

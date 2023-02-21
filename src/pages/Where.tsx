@@ -68,26 +68,56 @@ const Where = () => {
 
       <h3>Open-source Projects</h3>
       <Repo
-        name={'lanyard'}
-        url={'https://github.com/falcucci/lanyard'}
-        primaryLanguage={'Elixir'}
-        description="Expose your Discord presence to an API in <10 seconds (used on this site)"
+        name={'release-me'}
+        url={'https://github.com/falcucci/release-me'}
+        primaryLanguage={'Shell'}
+        description="A bunch of scripts that helps developers manage their software releases. It provides a ready-to-use process to track tasks, organize releases, and automate deployment processes."
       />
       <Repo
-        name={'domain-lookup-tree'}
-        url={'https://github.com/falcucci/domain-lookup-tree'}
-        primaryLanguage={'Rust'}
-        description="A tree structure in Rust optimized for looking up domain names, with wildcard support"
+        name={'github-board-refined'}
+        url={'https://github.com/falcucci/github-board-refined'}
+        primaryLanguage={'Javascript'}
+        description="A browser extension project management tool that helps you keep track of your projects and collaborate with your team. It helps you organize and manage your tasks and resources efficiently."
       />
       <Repo
-        name={'node_compass'}
-        url={'https://github.com/falcucci/node_compass'}
-        primaryLanguage={'Elixir'}
-        description="Automatic hash ring management for Elixir nodes"
+        name={'dicomcrop'}
+        url={'https://github.com/falcucci/dicomcrop '}
+        primaryLanguage={'Python'}
+        description="Prepare bedside medical images for machine learning and image interpretation, encrypting informations consumed from specified sources afterwards. "
+      />
+      <Repo
+        name={'f1-world-championship-api'}
+        url={'https://github.com/falcucci/f1-world-championship-api'}
+        primaryLanguage={'Javascript'}
+        description="A comprehensive API for Formula 1 World Championship data. It allows developers to quickly access data from the world's premier motor racing competition. "
+      />
+      <Repo
+        name={'hedera-payments'}
+        url={'https://github.com/falcucci/hedera-payments'}
+        primaryLanguage={'Golang'}
+        description="A secure, flexible, and reliable open source payment system built on top of the Hedera Hashgraph distributed ledger providing a way to securely manage payments. "
+      />
+      <Repo
+        name={'hedera-coin'}
+        url={'https://github.com/falcucci/hedera-coin'}
+        primaryLanguage={'Golang'}
+        description="A decentralized cryptocurrency platform that can be used to make payments, store value, and provide a secure way to transfer digital assets. "
+      />
+      <Repo
+        name={'react-native-activity-result'}
+        url={'https://github.com/falcucci/react-native-activity-result'}
+        primaryLanguage={'Java'}
+        description="A simple React Native native module for invoking `Activity.startActivityForResults`, `Activity.setResults`, and `Activity.finish` to help with implementing app-to-app communication."
+      />
+      <Repo
+        name={'italy-today'}
+        url={'https://github.com/falcucci/italy-today'}
+        primaryLanguage={'Javascript'}
+        description="Summarize the latest or specific news from Italy extracting the most important informations using AI and presenting them in a concise and easy-to-understand format."
       />
       <Repo
         name={'falcucci.eu'}
-        url={'https://github.com/falcucci/falcucci.eu'}
+        url={'https://github.com/falcucci/.eu'}
         primaryLanguage={'TypeScript'}
         description="This very website"
       />

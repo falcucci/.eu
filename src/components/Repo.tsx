@@ -26,11 +26,20 @@ const Repo = ({
               color={
                 primaryLanguage === 'Elixir'
                   ? '#9c1fa5'
+                  : primaryLanguage === 'Shell'
+                  ? '#89e051'
+                  : primaryLanguage === 'Python'
+                  ? '#3572a5'
+                  : primaryLanguage === 'Golang'
+                  ? '#00add8'
+                  : primaryLanguage === 'Javascript'
+                  ? '#f1e05a'
                   : primaryLanguage === 'TypeScript'
                   ? '#007acc'
                   : primaryLanguage === 'Rust'
                   ? '#dea584'
                   : 'hsl(var(--primary-900))'
+ 
               }
             />
           </p>

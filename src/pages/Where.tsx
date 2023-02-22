@@ -20,7 +20,7 @@ const Where = () => {
       <h3>Companies</h3>
       <CoWrapper>
         <Co
-          url="https://hop.io"
+          url="https://www.businessdefence.it/en"
           name="Defence Labs"
           iconReference={DefenceLabsIcon}
           tagline="Private Data"

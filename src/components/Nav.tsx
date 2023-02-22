@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { GitHubLogo, KeyIcon, MenuIcon, NavigationIcon, TwitterLogo, XIcon, HeartIcon } from './Icons';
+import { GitHubLogo, KeyIcon, MenuIcon, CameraIcon, ExternalLinkIcon, ChatIcon, CompassIcon, NavigationIcon, TwitterLogo, XIcon, HeartIcon } from './Icons';
 import Doing from './Doing';
 import useSound from 'use-sound';
 import { useAtom } from 'jotai';
@@ -134,8 +134,8 @@ const Nav = () => {
             <a href="https://github.com/falcucci">
               <GitHubLogo />
             </a>
-            <a href="https://keybase.io/falcucci">
-              <KeyIcon />
+            <a href="https://cal.com/falcucci">
+              <CameraIcon />
             </a>
           </Icons>
           <Doing

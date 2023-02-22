@@ -98,13 +98,6 @@ const How = () => {
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
 
-      <Technology
-        color="#232340"
-        icon={<ReactLogo />}
-        name="React"
-        type="Frontend framework"
-        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
-      />
 
       <Technology
         color="#000"
@@ -114,12 +107,21 @@ const How = () => {
         useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
       />
 
+
       <Technology
-        color="#007acc"
+        color="#fff"
         icon={<TypescriptLogo />}
         name="TypeScript"
         type="JS Framework"
         useCase={'Types for JS - will save your life when projects expand'}
+      />
+
+      <Technology
+        color="#000"
+        icon={<ReactLogo />}
+        name="React"
+        type="Frontend framework"
+        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
 
       <Technology

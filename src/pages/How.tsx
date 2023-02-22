@@ -2,7 +2,13 @@ import PageWrapper from './PageWrapper';
 import Technology from '../components/Technology';
 import {
   ElixirLogo,
+  SafariLogo,
+  FirefoxLogo,
+  ChromeLogo,
+  KubernatesLogo,
+  DockerLogo,
   KibanaLogo,
+  PrometheusLogo,
   ElasticSearch,
   RedisSQL,
   PostgreSQL,
@@ -42,7 +48,6 @@ const How = () => {
         type="Frontend framework"
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
-
 
       <Technology
         color="#000"
@@ -104,44 +109,10 @@ const How = () => {
 
       <Technology
         color="#000"
-        icon={<PostgreSQL />}
-        name="PostgreSQL"
-        type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
-      />
-
-
-      <Technology
-        color="#000"
         icon={<GolangLogo />}
         name="Golang"
         type="Backend, System"
         useCase={`Golang was an eye-opening experience since now a days.`}
-      />
-
-      <Technology
-        color="#000"
-        icon={<NodeJsLogo />}
-        name="Javascript"
-        type="Realtime, Backend"
-        useCase={`A indispensable tool in my toolbox which I get constantly impressed by its power and flexibility.`}
-      />
-
-      <Technology
-        color="#000"
-        icon={<GcpLogo />}
-        name="GCP"
-        type="Frontend framework"
-        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
-      />
-
-
-      <Technology
-        color="#000"
-        icon={<HasuraLogo />}
-        name="Hasura"
-        type="Realtime, Backend"
-        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
       />
 
       <Technology
@@ -154,19 +125,85 @@ const How = () => {
 
       <Technology
         color="#000"
+        icon={<PostgreSQL />}
+        name="PostgreSQL"
+        type="Message queue"
+        useCase={'Messaging between different services in a robust & durable way'}
+      />
+
+      <Technology
+        color="#fff"
+        icon={<PrometheusLogo />}
+        name="Prometheus"
+        type="JS Framework"
+        useCase={'Types for JS - will save your life when projects expand'}
+      />
+
+      <Technology
+        color="#000"
+        icon={<NodeJsLogo />}
+        name="Javascript"
+        type="Realtime, Backend"
+        useCase={`A indispensable tool in my toolbox which I get constantly impressed by its power and flexibility.`}
+      />
+
+      <Technology
+        color="#fff"
+        icon={<DockerLogo />}
+        name="Docker"
+        type="JS Framework"
+        useCase={'Types for JS - will save your life when projects expand'}
+      />
+
+      <Technology
+        color="#000"
+        icon={<GcpLogo />}
+        name="GCP"
+        type="Frontend framework"
+        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
+      />
+
+      <Technology
+        color="#fff"
+        icon={<KubernatesLogo />}
+        name="Kubernates"
+        type="JS Framework"
+        useCase={'Types for JS - will save your life when projects expand'}
+      />
+
+      <Technology
+        color="#000"
+        icon={<FirefoxLogo />}
+        name="Firefox Extensions"
+        type="JS Framework"
+        useCase={'Types for JS - will save your life when projects expand'}
+      />
+
+      <Technology
+        color="#fff"
+        icon={<RabbitMQLogo />}
+        name="RabbitMQ"
+        type="Message queue"
+        useCase={'Messaging between different services in a robust & durable way'}
+      />
+
+
+      <Technology
+        color="#000"
+        icon={<HasuraLogo />}
+        name="Hasura"
+        type="Realtime, Backend"
+        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
+      />
+
+      <Technology
+        color="#000"
         icon={<ReactLogo />}
         name="React"
         type="Frontend framework"
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
 
-      <Technology
-        color="#FF6600"
-        icon={<RabbitMQLogo />}
-        name="RabbitMQ"
-        type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
-      />
 
       <Technology
         color="#000"
@@ -176,7 +213,6 @@ const How = () => {
         useCase={'Messaging between different services in a robust & durable way'}
       />
 
-
       <Technology
         color="#000"
         icon={<RedisSQL />}
@@ -184,7 +220,6 @@ const How = () => {
         type="Message queue"
         useCase={'Messaging between different services in a robust & durable way'}
       />
-
 
       <Technology
         color="#9c1fa5"

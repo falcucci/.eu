@@ -39,7 +39,7 @@ const How = () => {
         icon={<VercelLogo />}
         name="Vercel"
         type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
+        useCase={'Everything about personal projects also runs here as the main deployment cloud service, since lambda function til complex web applications.'}
       />
 
       <Technology
@@ -47,7 +47,7 @@ const How = () => {
         icon={<NextJsLogo />}
         name="NextJs"
         type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
+        useCase={'Gives me the power to quickly develop and deploy web applications that are modern, fast and secure.'}
       />
 
       <Technology
@@ -56,16 +56,16 @@ const How = () => {
         name="Rust"
         type="Backend, System"
         useCase={
-          'Optimizing parts of Elixir code using Rust NIFs and writing efficient system code'
+          'Optimizing parts of Python and Nodejs code using Rust bindings, writing native efficient system code.'
         }
       />
 
       <Technology
-        color="#fff"
+        color="#000"
         icon={<PythonLogo />}
         name="Python"
-        type="Realtime, Backend"
-        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
+        type="Backend, Backend"
+        useCase={'Everything which envolves image processing, scraping, data analysis, data manipulation and visualization is my number one of choice.'}
       />
 
       <Technology
@@ -74,7 +74,7 @@ const How = () => {
         name="Golang"
         type="Backend, System"
         useCase={
-          'Optimizing parts of Elixir code using Rust NIFs and writing efficient system code'
+          `Golang was an eye-opening experience since now a days.`
         }
       />
 
@@ -83,7 +83,7 @@ const How = () => {
         icon={<NodeJsLogo />}
         name="Javascript"
         type="Realtime, Backend"
-        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
+        useCase={`A indispensable tool in my toolbox which I get constantly impressed by its power and flexibility.`}
       />
 
       <Technology
@@ -160,13 +160,12 @@ const How = () => {
         useCase={'Messaging between different services in a robust & durable way'}
       />
  
-
       <Technology
         color="#fff"
         icon={<ElasticSearch />}
         name="ElasticSearch"
-        type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
+        type="Search Engine"
+        useCase={'Most used to retrieve common informations in a fast and scalable way such as catalogs.'}
       />
  
       <Technology

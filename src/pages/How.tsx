@@ -2,6 +2,8 @@ import PageWrapper from './PageWrapper';
 import Technology from '../components/Technology';
 import {
   ElixirLogo,
+  GcpLogo,
+  HasuraLogo,
   RabbitMQLogo,
   NextJsLogo,
   NodeJsLogo,
@@ -10,6 +12,7 @@ import {
   PythonLogo,
   ReactLogo,
   RustLogo,
+  AwsLogo,
   SolidityLogo,
   TypescriptLogo,
 } from '../components/Icons';
@@ -37,25 +40,16 @@ const How = () => {
 
       <Technology
         color="#fff"
-        icon={<NextJsLogo/>}
+        icon={<NextJsLogo />}
         name="NextJs"
         type="Message queue"
         useCase={'Messaging between different services in a robust & durable way'}
       />
 
-
-      <Technology
-        color="#fff"
-        icon={<NodeJsLogo />}
-        name="Javascript"
-        type="Realtime, Backend"
-        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
-      />
-
       <Technology
         color="#000"
-        icon={<GolangLogo />}
-        name="Golang"
+        icon={<RustLogo />}
+        name="Rust"
         type="Backend, System"
         useCase={
           'Optimizing parts of Elixir code using Rust NIFs and writing efficient system code'
@@ -71,6 +65,40 @@ const How = () => {
       />
 
       <Technology
+        color="#000"
+        icon={<GolangLogo />}
+        name="Golang"
+        type="Backend, System"
+        useCase={
+          'Optimizing parts of Elixir code using Rust NIFs and writing efficient system code'
+        }
+      />
+
+      <Technology
+        color="#000"
+        icon={<NodeJsLogo />}
+        name="Javascript"
+        type="Realtime, Backend"
+        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
+      />
+
+      <Technology
+        color="#fff"
+        icon={<AwsLogo />}
+        name="AWS"
+        type="Frontend framework"
+        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
+      />
+
+      <Technology
+        color="#000"
+        icon={<GcpLogo />}
+        name="GCP"
+        type="Frontend framework"
+        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
+      />
+
+      <Technology
         color="#232340"
         icon={<ReactLogo />}
         name="React"
@@ -79,13 +107,11 @@ const How = () => {
       />
 
       <Technology
-        color="#dea584"
-        icon={<RustLogo />}
-        name="Rust"
-        type="Backend, System"
-        useCase={
-          'Optimizing parts of Elixir code using Rust NIFs and writing efficient system code'
-        }
+        color="#000"
+        icon={<HasuraLogo />}
+        name="Hasura"
+        type="Realtime, Backend"
+        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
       />
 
       <Technology
@@ -111,7 +137,6 @@ const How = () => {
         type="Realtime, Backend"
         useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
       />
-
     </PageWrapper>
   );
 };

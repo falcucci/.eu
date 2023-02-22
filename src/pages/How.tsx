@@ -26,7 +26,7 @@ const How = () => {
       </Helmet>
       <h1>How I Do It</h1>
       <p>
-        I highly leverage new bleeding-edge technologies and languages like Elixir to stay on top of
+        I highly leverage new bleeding-edge technologies and languages like Rust, Python, Nodejs and Golang to stay on top of
         the game. You can find a list of my most-used technologies below.
       </p>
 

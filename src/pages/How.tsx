@@ -2,9 +2,10 @@ import PageWrapper from './PageWrapper';
 import Technology from '../components/Technology';
 import {
   ElixirLogo,
- ElasticSearch,
- RedisSQL,
- PostgreSQL,
+  KibanaLogo,
+  ElasticSearch,
+  RedisSQL,
+  PostgreSQL,
   GraphqlLogo,
   GcpLogo,
   HasuraLogo,
@@ -35,19 +36,32 @@ const How = () => {
       </p>
 
       <Technology
+        color="#fff"
+        icon={<AwsLogo />}
+        name="AWS"
+        type="Frontend framework"
+        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
+      />
+
+
+      <Technology
         color="#000"
         icon={<VercelLogo />}
         name="Vercel"
         type="Message queue"
-        useCase={'Everything about personal projects also runs here as the main deployment cloud service, since lambda function til complex web applications.'}
+        useCase={
+          'Everything about personal projects also runs here as the main deployment cloud service, since lambda function til complex web applications.'
+        }
       />
 
       <Technology
         color="#fff"
         icon={<NextJsLogo />}
-        name="NextJs"
+        name="Next"
         type="Message queue"
-        useCase={'Gives me the power to quickly develop and deploy web applications that are modern, fast and secure.'}
+        useCase={
+          'Gives me the power to quickly develop and deploy web applications that are modern, fast and secure.'
+        }
       />
 
       <Technology
@@ -61,21 +75,48 @@ const How = () => {
       />
 
       <Technology
+        color="#fff"
+        icon={<KibanaLogo />}
+        name="Kibana"
+        type="Frontend framework"
+        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
+      />
+
+      <Technology
         color="#000"
         icon={<PythonLogo />}
         name="Python"
         type="Backend, Backend"
-        useCase={'Everything which envolves image processing, scraping, data analysis, data manipulation and visualization is my number one of choice.'}
+        useCase={
+          'Everything which envolves image processing, scraping, data analysis, data manipulation and visualization is my number one of choice.'
+        }
       />
+
+      <Technology
+        color="#fff"
+        icon={<ElasticSearch />}
+        name="ElasticSearch"
+        type="Search Engine"
+        useCase={
+          'Most used to retrieve common informations in a fast and scalable way such as catalogs.'
+        }
+      />
+
+      <Technology
+        color="#000"
+        icon={<PostgreSQL />}
+        name="PostgreSQL"
+        type="Message queue"
+        useCase={'Messaging between different services in a robust & durable way'}
+      />
+
 
       <Technology
         color="#000"
         icon={<GolangLogo />}
         name="Golang"
         type="Backend, System"
-        useCase={
-          `Golang was an eye-opening experience since now a days.`
-        }
+        useCase={`Golang was an eye-opening experience since now a days.`}
       />
 
       <Technology
@@ -87,20 +128,13 @@ const How = () => {
       />
 
       <Technology
-        color="#fff"
-        icon={<AwsLogo />}
-        name="AWS"
-        type="Frontend framework"
-        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
-      />
-
-      <Technology
         color="#000"
         icon={<GcpLogo />}
         name="GCP"
         type="Frontend framework"
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
+
 
       <Technology
         color="#000"
@@ -125,8 +159,6 @@ const How = () => {
         type="Frontend framework"
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
- 
-
 
       <Technology
         color="#FF6600"
@@ -144,13 +176,6 @@ const How = () => {
         useCase={'Messaging between different services in a robust & durable way'}
       />
 
-      <Technology
-        color="#000"
-        icon={<PostgreSQL />}
-        name="PostgreSQL"
-        type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
-      />
 
       <Technology
         color="#000"
@@ -159,15 +184,8 @@ const How = () => {
         type="Message queue"
         useCase={'Messaging between different services in a robust & durable way'}
       />
- 
-      <Technology
-        color="#fff"
-        icon={<ElasticSearch />}
-        name="ElasticSearch"
-        type="Search Engine"
-        useCase={'Most used to retrieve common informations in a fast and scalable way such as catalogs.'}
-      />
- 
+
+
       <Technology
         color="#9c1fa5"
         icon={<ElixirLogo />}

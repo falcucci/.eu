@@ -69,6 +69,23 @@ export const HasuraLogo = () => (
   </svg>
 );
 
+export const KibanaLogo = () => (
+  <svg
+    fill="#000000"
+    width="256px"
+    height="256px"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      {' '}
+      <path d="M28.052 31.984h-22.479l13.172-15.812c5.64 3.683 9.307 9.391 9.307 15.812zM28.052 0.052h-23.948v28.735z"></path>{' '}
+    </g>
+  </svg>
+);
+
 export const PythonLogo = () => (
   <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#fff">
     <g id="SVGRepo_bgCarrier" stroke-width="0"></g>

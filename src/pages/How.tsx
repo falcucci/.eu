@@ -55,7 +55,7 @@ const How = () => {
         name="Vercel"
         type="Message queue"
         useCase={
-          'Everything about personal projects also runs here as the main deployment cloud service, since lambda function til complex web applications.'
+          'Every personal project goes here, since lambda functions til complex web applications.'
         }
       />
 

@@ -3,8 +3,10 @@ import Technology from '../components/Technology';
 import {
   ElixirLogo,
   RabbitMQLogo,
+  NextJsLogo,
   NodeJsLogo,
   GolangLogo,
+  VercelLogo,
   PythonLogo,
   ReactLogo,
   RustLogo,
@@ -26,17 +28,24 @@ const How = () => {
       </p>
 
       <Technology
-        color="#dea584"
-        icon={<RustLogo />}
-        name="Rust"
-        type="Backend, System"
-        useCase={
-          'Optimizing parts of Elixir code using Rust NIFs and writing efficient system code'
-        }
+        color="#000"
+        icon={<VercelLogo />}
+        name="Vercel"
+        type="Message queue"
+        useCase={'Messaging between different services in a robust & durable way'}
       />
 
       <Technology
-        color="#f1e05a"
+        color="#fff"
+        icon={<NextJsLogo/>}
+        name="NextJs"
+        type="Message queue"
+        useCase={'Messaging between different services in a robust & durable way'}
+      />
+
+
+      <Technology
+        color="#fff"
         icon={<NodeJsLogo />}
         name="Javascript"
         type="Realtime, Backend"
@@ -44,7 +53,7 @@ const How = () => {
       />
 
       <Technology
-        color="#00add8"
+        color="#000"
         icon={<GolangLogo />}
         name="Golang"
         type="Backend, System"
@@ -54,17 +63,9 @@ const How = () => {
       />
 
       <Technology
-        color="#3776ab"
+        color="#fff"
         icon={<PythonLogo />}
         name="Python"
-        type="Realtime, Backend"
-        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
-      />
-
-      <Technology
-        color="#9c1fa5"
-        icon={<ElixirLogo />}
-        name="Elixir"
         type="Realtime, Backend"
         useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
       />
@@ -102,6 +103,15 @@ const How = () => {
         type="Message queue"
         useCase={'Messaging between different services in a robust & durable way'}
       />
+
+      <Technology
+        color="#9c1fa5"
+        icon={<ElixirLogo />}
+        name="Elixir"
+        type="Realtime, Backend"
+        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
+      />
+
     </PageWrapper>
   );
 };

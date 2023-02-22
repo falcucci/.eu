@@ -23,7 +23,7 @@ const Where = () => {
           url="https://www.businessdefence.it/en"
           name="Defence Labs"
           iconReference={DefenceLabsIcon}
-          tagline="Private Data"
+          tagline="Computer & Network Security"
           role={'Senior Software Engineer & Core Developer'}
           pretext={'Currently'}
           what={`

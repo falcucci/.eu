@@ -100,13 +100,13 @@ const Doing = (
           <>
             <ActivityRow>
               <ActivityImageContainer>
-                <ActivityImage src={'https://i.scdn.co/image/ab67616d00001e021d2fadacc73f4ab4e55cffbe'} />
+                <ActivityImage src={'https://i.scdn.co/image/ab67616d00001e02c2d680d3ca07020db799d627'} />
                 <ActivitySecondaryImage src={SpotifyLogo} />
               </ActivityImageContainer>
 
               <ActivityInfo>
-                <h5>{'Alive'}</h5>
-                <p>by {'Tube & Berger'}</p>
+                <h5>{'The Way'}</h5>
+                <p>by {'Sultan + Shepard'}</p>
               </ActivityInfo>
             </ActivityRow>
           </>

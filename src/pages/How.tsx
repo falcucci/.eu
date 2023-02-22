@@ -175,8 +175,8 @@ const How = () => {
         color="#000"
         icon={<FirefoxLogo />}
         name="Firefox Extensions"
-        type="JS Framework"
-        useCase={'Types for JS - will save your life when projects expand'}
+        type="Browser"
+        useCase={'Ive been creating browser extensions for a few years so everytime a new tech hype comes up new ideas bloom.'}
       />
 
       <Technology

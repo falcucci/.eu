@@ -2,6 +2,10 @@ import PageWrapper from './PageWrapper';
 import Technology from '../components/Technology';
 import {
   ElixirLogo,
+ ElasticSearch,
+ RedisSQL,
+ PostgreSQL,
+  GraphqlLogo,
   GcpLogo,
   HasuraLogo,
   RabbitMQLogo,
@@ -26,8 +30,8 @@ const How = () => {
       </Helmet>
       <h1>How I Do It</h1>
       <p>
-        I highly leverage new bleeding-edge technologies and languages like Rust, Python, Nodejs and Golang to stay on top of
-        the game. You can find a list of my most-used technologies below.
+        I highly leverage new bleeding-edge technologies and languages like Rust, Python, Nodejs and
+        Golang to stay on top of the game. You can find a list of my most-used technologies below.
       </p>
 
       <Technology
@@ -98,7 +102,6 @@ const How = () => {
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
 
-
       <Technology
         color="#000"
         icon={<HasuraLogo />}
@@ -106,7 +109,6 @@ const How = () => {
         type="Realtime, Backend"
         useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
       />
-
 
       <Technology
         color="#fff"
@@ -123,6 +125,8 @@ const How = () => {
         type="Frontend framework"
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
+ 
+
 
       <Technology
         color="#FF6600"
@@ -132,6 +136,39 @@ const How = () => {
         useCase={'Messaging between different services in a robust & durable way'}
       />
 
+      <Technology
+        color="#000"
+        icon={<GraphqlLogo />}
+        name="GraphQL"
+        type="Message queue"
+        useCase={'Messaging between different services in a robust & durable way'}
+      />
+
+      <Technology
+        color="#000"
+        icon={<PostgreSQL />}
+        name="PostgreSQL"
+        type="Message queue"
+        useCase={'Messaging between different services in a robust & durable way'}
+      />
+
+      <Technology
+        color="#000"
+        icon={<RedisSQL />}
+        name="Redis"
+        type="Message queue"
+        useCase={'Messaging between different services in a robust & durable way'}
+      />
+ 
+
+      <Technology
+        color="#fff"
+        icon={<ElasticSearch />}
+        name="ElasticSearch"
+        type="Message queue"
+        useCase={'Messaging between different services in a robust & durable way'}
+      />
+ 
       <Technology
         color="#9c1fa5"
         icon={<ElixirLogo />}

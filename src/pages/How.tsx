@@ -46,7 +46,7 @@ const How = () => {
         icon={<AwsLogo />}
         name="AWS"
         type="Frontend framework"
-        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
+        useCase={'AWS Lambda as much as possible and mainly SQS/SNS to send, store, and receive messages between different applications and services.'}
       />
 
       <Technology

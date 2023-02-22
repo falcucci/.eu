@@ -192,7 +192,7 @@ const How = () => {
         color="#000"
         icon={<HasuraLogo />}
         name="Hasura"
-        type="Realtime, Backend"
+        type="GraphQL Engine, Backend"
         useCase={'I lovely use Hasura to create quickly data-driven applications and fetch data from multiple sources with all security and flexibility benefits.'}
       />
 

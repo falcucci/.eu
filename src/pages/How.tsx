@@ -3,6 +3,9 @@ import Technology from '../components/Technology';
 import {
   ElixirLogo,
   RabbitMQLogo,
+  NodeJsLogo,
+  GolangLogo,
+  PythonLogo,
   ReactLogo,
   RustLogo,
   SolidityLogo,
@@ -21,6 +24,42 @@ const How = () => {
         I highly leverage new bleeding-edge technologies and languages like Elixir to stay on top of
         the game. You can find a list of my most-used technologies below.
       </p>
+
+      <Technology
+        color="#dea584"
+        icon={<RustLogo />}
+        name="Rust"
+        type="Backend, System"
+        useCase={
+          'Optimizing parts of Elixir code using Rust NIFs and writing efficient system code'
+        }
+      />
+
+      <Technology
+        color="#f1e05a"
+        icon={<NodeJsLogo />}
+        name="Javascript"
+        type="Realtime, Backend"
+        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
+      />
+
+      <Technology
+        color="#00add8"
+        icon={<GolangLogo />}
+        name="Golang"
+        type="Backend, System"
+        useCase={
+          'Optimizing parts of Elixir code using Rust NIFs and writing efficient system code'
+        }
+      />
+
+      <Technology
+        color="#3776ab"
+        icon={<PythonLogo />}
+        name="Python"
+        type="Realtime, Backend"
+        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
+      />
 
       <Technology
         color="#9c1fa5"

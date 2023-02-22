@@ -23,7 +23,7 @@ const Home = () => {
         <a href="https://github.com/defence-labs?type=source" target="norel noopen">
           Defence Labs
         </a>{' '}
-        as core Software Engineer.
+        as a core Software Engineer.
       </p>
       <p>
         I have had a wealth of growing opportunities over several industries and one thing never

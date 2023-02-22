@@ -112,7 +112,7 @@ const How = () => {
         icon={<GolangLogo />}
         name="Golang"
         type="Backend, System"
-        useCase={`Golang was an eye-opening experience since now a days.`}
+        useCase={`Building fault-tolerant realtime systems that scale out across multiple nodes.`}
       />
 
       <Technology
@@ -221,13 +221,6 @@ const How = () => {
         useCase={'Messaging between different services in a robust & durable way'}
       />
 
-      <Technology
-        color="#9c1fa5"
-        icon={<ElixirLogo />}
-        name="Elixir"
-        type="Realtime, Backend"
-        useCase={'Building fault-tolerant realtime systems that scale out across multiple nodes'}
-      />
     </PageWrapper>
   );
 };

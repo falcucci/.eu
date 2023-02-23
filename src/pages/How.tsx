@@ -46,7 +46,9 @@ const How = () => {
         icon={<AwsLogo />}
         name="AWS"
         type="Cloud Platform"
-        useCase={'AWS Lambdas as much as possible and mainly SQS/SNS to send, store and receive messages between different applications and services.'}
+        useCase={
+          'AWS Lambdas as much as possible and mainly SQS/SNS to send, store and receive messages between different applications and services.'
+        }
       />
 
       <Technology
@@ -152,7 +154,9 @@ const How = () => {
         icon={<DockerLogo />}
         name="Docker"
         type="Containerized Application Development"
-        useCase={'Provide a runtime environment and deploy applications by packaging them in lightweight containers. '}
+        useCase={
+          'Provide a runtime environment and deploy applications by packaging them in lightweight containers. '
+        }
       />
 
       <Technology
@@ -160,7 +164,9 @@ const How = () => {
         icon={<GcpLogo />}
         name="GCP"
         type="Cloud Platform"
-        useCase={'Excellent IaaS solution, easy to use and provides a wide selection of assets including network infrastructure and virtual networking.'}
+        useCase={
+          'Excellent IaaS solution, easy to use and provides a wide selection of assets including network infrastructure and virtual networking.'
+        }
       />
 
       <Technology
@@ -176,7 +182,9 @@ const How = () => {
         icon={<FirefoxLogo />}
         name="Firefox Extensions"
         type="Browser"
-        useCase={'Ive been creating browser extensions for a few years so everytime a new tech hype comes up new ideas bloom.'}
+        useCase={
+          'Ive been creating browser extensions for a few years so everytime a new tech hype comes up new ideas bloom.'
+        }
       />
 
       <Technology
@@ -187,13 +195,14 @@ const How = () => {
         useCase={'Messaging between different services in a robust & durable way'}
       />
 
-
       <Technology
         color="#000"
         icon={<HasuraLogo />}
         name="Hasura"
         type="GraphQL Engine, Backend"
-        useCase={'I lovely use Hasura to create quickly data-driven applications and fetch data from multiple sources with all security and flexibility benefits.'}
+        useCase={
+          'I lovely use Hasura to create quickly data-driven applications and fetch data from multiple sources with all security and flexibility benefits.'
+        }
       />
 
       <Technology
@@ -204,23 +213,21 @@ const How = () => {
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
 
-
       <Technology
         color="#000"
         icon={<GraphqlLogo />}
         name="GraphQL"
-        type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
+        type="Query Runtime Engine"
+        useCase={'I love REST API but GraphQL is in another level of flexibility and performance if you know what are you doing.'}
       />
 
       <Technology
         color="#000"
         icon={<RedisSQL />}
         name="Redis"
-        type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
+        type="In-memory Data Structure Store"
+        useCase={"The best memcached database I have ever used so far. And it's blazingly fast."}
       />
-
     </PageWrapper>
   );
 };

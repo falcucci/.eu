@@ -62,8 +62,8 @@ const How = () => {
       <Technology
         color="#fff"
         icon={<NextJsLogo />}
-        name="Next"
-        type="Message queue"
+        name="Next.js"
+        type="React Framework "
         useCase={
           'Gives me the power to quickly develop and deploy web applications that are modern, fast and secure.'
         }

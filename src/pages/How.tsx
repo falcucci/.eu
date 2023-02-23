@@ -91,7 +91,7 @@ const How = () => {
         color="#000"
         icon={<PythonLogo />}
         name="Python"
-        type="Backend, Backend"
+        type="Backend, System"
         useCase={
           'Everything which envolves image processing, scraping, data analysis, data manipulation and visualization is my number one of choice.'
         }
@@ -127,8 +127,8 @@ const How = () => {
         color="#000"
         icon={<PostgreSQL />}
         name="PostgreSQL"
-        type="Message queue"
-        useCase={'Messaging between different services in a robust & durable way'}
+        type="Relational Database "
+        useCase={'Why? Stability, feature set, very large database size at high speeds.'}
       />
 
       <Technology

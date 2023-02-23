@@ -54,7 +54,7 @@ export const GolangLogo = (props: any) => (
 
 export const HasuraLogo = () => (
   <svg
-    fill="#fff"
+    fill="#000"
     width="256px"
     height="256px"
     viewBox="0 0 24 24"
@@ -1614,7 +1614,7 @@ export const ElasticSearch = () => (
 
 export const RedisSQL = () => (
   <svg
-    fill="#fff"
+    fill="#000"
     width="256px"
     height="256px"
     viewBox="0 -2 28 28"

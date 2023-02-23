@@ -195,15 +195,6 @@ const How = () => {
         useCase={'Messaging between different services in a robust & durable way'}
       />
 
-      <Technology
-        color="#000"
-        icon={<HasuraLogo />}
-        name="Hasura"
-        type="GraphQL Engine, Backend"
-        useCase={
-          'I lovely use Hasura to create quickly data-driven applications and fetch data from multiple sources with all security and flexibility benefits.'
-        }
-      />
 
       <Technology
         color="#000"
@@ -211,6 +202,16 @@ const How = () => {
         name="React"
         type="Frontend framework"
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
+      />
+
+      <Technology
+        color="#fff"
+        icon={<HasuraLogo />}
+        name="Hasura"
+        type="GraphQL Engine, Backend"
+        useCase={
+          'I lovely use Hasura to create quickly data-driven applications and fetch data from multiple sources with all security and flexibility benefits.'
+        }
       />
 
       <Technology
@@ -222,7 +223,7 @@ const How = () => {
       />
 
       <Technology
-        color="#000"
+        color="#fff"
         icon={<RedisSQL />}
         name="Redis"
         type="In-memory Data Structure Store"

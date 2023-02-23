@@ -86,7 +86,7 @@ const How = () => {
         icon={<KibanaLogo />}
         name="Kibana"
         type="ElasticSearch data visualization"
-        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
+        useCase={'Using to visualize Elasticsearch data and navigate the Elastic Stack.'}
       />
 
       <Technology

@@ -159,16 +159,16 @@ const How = () => {
         color="#000"
         icon={<GcpLogo />}
         name="GCP"
-        type="Computer application"
-        useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
+        type="Cloud Platform"
+        useCase={'Excellent IaaS solution, easy to use and provides a wide selection of assets including network infrastructure and virtual networking.'}
       />
 
       <Technology
         color="#fff"
         icon={<KubernatesLogo />}
         name="Kubernates"
-        type="JS Framework"
-        useCase={'Types for JS - will save your life when projects expand'}
+        type="Automation software deployment"
+        useCase={'Scale and run my containerized applications.'}
       />
 
       <Technology

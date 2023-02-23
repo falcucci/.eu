@@ -53,7 +53,7 @@ const How = () => {
         color="#000"
         icon={<VercelLogo />}
         name="Vercel"
-        type="ElasticSearch data visualization"
+        type="Web hosting"
         useCase={
           'Every personal project goes here, since lambda functions til complex web applications.'
         }
@@ -83,7 +83,7 @@ const How = () => {
         color="#fff"
         icon={<KibanaLogo />}
         name="Kibana"
-        type="Frontend framework"
+        type="ElasticSearch data visualization"
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
 

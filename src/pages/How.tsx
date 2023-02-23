@@ -45,7 +45,7 @@ const How = () => {
         color="#fff"
         icon={<AwsLogo />}
         name="AWS"
-        type="Frontend framework"
+        type="Cloud Platform"
         useCase={'AWS Lambdas as much as possible and mainly SQS/SNS to send, store and receive messages between different applications and services.'}
       />
 
@@ -135,8 +135,8 @@ const How = () => {
         color="#fff"
         icon={<PrometheusLogo />}
         name="Prometheus"
-        type="JS Framework"
-        useCase={'Types for JS - will save your life when projects expand'}
+        type="Monitoring system & time series database"
+        useCase={'God damn good using it with grafana.'}
       />
 
       <Technology
@@ -151,15 +151,15 @@ const How = () => {
         color="#fff"
         icon={<DockerLogo />}
         name="Docker"
-        type="JS Framework"
-        useCase={'Types for JS - will save your life when projects expand'}
+        type="Containerized Application Development"
+        useCase={'Provide a runtime environment and deploy applications by packaging them in lightweight containers. '}
       />
 
       <Technology
         color="#000"
         icon={<GcpLogo />}
         name="GCP"
-        type="Frontend framework"
+        type="Computer application"
         useCase={'Constructing stateful and durable frontends for large and interactive web apps'}
       />
 

@@ -27,7 +27,7 @@ const Where = () => {
           role={'Senior Software Engineer & Core Developer'}
           pretext={'Currently'}
           what={`
- Rebuilding the IT department from scratch drived by creating fast and innovative projects  using the most up-to-date technologies in a serverless environment, releasing new products and integrations, making them also accessible through developer tools.`}
+ Rebuilding the IT department from scratch drived by creating fast and innovative projects using the most up-to-date technologies in a serverless environment, releasing new products and integrations, making them also accessible through developer tools.`}
         />
         <Co
           url="https://www.magazineluiza.com.br"

@@ -47,7 +47,7 @@ const How = () => {
         color="#fff"
         icon={<VimLogo />}
         name="Text Editor"
-        type="In-memory Data Structure Store"
+        type="Screen-based Text Editor "
         useCase={"I do almost everything in the terminal, Vim helps my daily productivity so much."}
       />
 

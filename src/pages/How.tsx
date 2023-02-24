@@ -2,7 +2,9 @@ import PageWrapper from './PageWrapper';
 import Technology from '../components/Technology';
 import {
   ElixirLogo,
+  AppleIcon,
   SafariLogo,
+  VimLogo,
   FirefoxLogo,
   ChromeLogo,
   KubernatesLogo,
@@ -40,6 +42,22 @@ const How = () => {
         I highly leverage new bleeding-edge technologies and languages like Rust, Python, Nodejs and
         Golang to stay on top of the game. You can find a list of my most-used technologies below.
       </p>
+
+      <Technology
+        color="#fff"
+        icon={<VimLogo />}
+        name="Text Editor"
+        type="In-memory Data Structure Store"
+        useCase={"I do almost everything in the terminal, Vim helps my daily productivity so much."}
+      />
+
+      <Technology
+        color="#000"
+        icon={<AppleIcon />}
+        name="OS"
+        type="Unix Operating System"
+        useCase={"I strongly use the consistent apple ecosystem."}
+      />
 
       <Technology
         color="#fff"
@@ -195,7 +213,6 @@ const How = () => {
         useCase={'Messaging between different services in a robust & durable way'}
       />
 
-
       <Technology
         color="#000"
         icon={<ReactLogo />}
@@ -219,7 +236,9 @@ const How = () => {
         icon={<GraphqlLogo />}
         name="GraphQL"
         type="Query Runtime Engine"
-        useCase={'I love REST API but GraphQL is in another level of flexibility and performance if you know what are you doing.'}
+        useCase={
+          'I love REST API but GraphQL is in another level of flexibility and performance if you know what are you doing.'
+        }
       />
 
       <Technology
@@ -229,6 +248,7 @@ const How = () => {
         type="In-memory Data Structure Store"
         useCase={"The best memcached database I have ever used so far. And it's blazingly fast."}
       />
+
     </PageWrapper>
   );
 };

@@ -6,7 +6,7 @@ import { Presence } from '../types/lanyard';
 import SpotifyLogo from '../assets/images/spotify-logo.svg';
 import AppleLogo from '../assets/images/apple-logo.svg';
 import { useAtom } from 'jotai';
-import { doingAtom } from '../state/lanyard';
+import { doingAtom, spotifyAtom, defaultSpotify } from '../state/lanyard';
 
 // Thanks to Tim (https://github.com/timcole/timcole.me/blob/%F0%9F%A6%84/components/lanyard.tsx) for the types
 
@@ -46,6 +46,7 @@ const Doing = (
 ) => {
   const [socket, setSocket] = useState<WebSocket | null>(null);
   const [doing, setDoing] = useAtom(doingAtom);
+  const [spotify, setSpotify] = useAtom(spotifyAtom);
 
   const send = (op: Operation, d?: unknown): void => {
     if (socket !== null) socket.send(JSON.stringify({ op, d }));
@@ -66,7 +67,10 @@ const Doing = (
       } else if (op === Operation.Event && t) {
         logLanyardEvent(t, d);
 
-        if ([EventType.INIT_STATE, EventType.PRESENCE_UPDATE].includes(t)) setDoing(d as Presence);
+        if ([EventType.INIT_STATE, EventType.PRESENCE_UPDATE].includes(t)) {
+          setDoing(d as Presence); 
+          setSpotify(d.spotify || defaultSpotify)
+        } 
       }
     };
 
@@ -100,13 +104,13 @@ const Doing = (
           <>
             <ActivityRow>
               <ActivityImageContainer>
-                <ActivityImage src={'https://i.scdn.co/image/ab67616d00001e02c2d680d3ca07020db799d627'} />
+                <ActivityImage src={spotify.album_art_url} />
                 <ActivitySecondaryImage src={SpotifyLogo} />
               </ActivityImageContainer>
 
               <ActivityInfo>
-                <h5>{'The Way'}</h5>
-                <p>by {'Sultan + Shepard'}</p>
+                <h5>{spotify.song}</h5>
+                <p>by {spotify.artist}</p>
               </ActivityInfo>
             </ActivityRow>
           </>

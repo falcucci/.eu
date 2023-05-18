@@ -1,7 +1,7 @@
 import { atom } from 'jotai';
 import { atomWithStorage } from 'jotai/utils';
 
-import { Presence } from '../types/lanyard';
+import { Presence, Spotify } from '../types/lanyard';
 
 export const doingAtom = atom<Presence | null>(null);
 
@@ -17,4 +17,4 @@ export const defaultSpotify = {
   album: 'Echoes Of Life: Night',
 };
 
-export const spotifyAtom = atomWithStorage('spotify', {});
+export const spotifyAtom = atomWithStorage('spotify', <Spotify | null>(null));

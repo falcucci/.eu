@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import { forwardRef, useEffect, useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
-import { Presence } from '../types/lanyard';
+import { Presence, Spotify } from '../types/lanyard';
 import SpotifyLogo from '../assets/images/spotify-logo.svg';
 import AppleLogo from '../assets/images/apple-logo.svg';
 import { useAtom } from 'jotai';
@@ -57,6 +57,7 @@ const Doing = (
 
     socket.onmessage = function ({ data }: MessageEvent): void {
       const { op, t, d }: SocketEvent = JSON.parse(data);
+      const { spotify } = d as Presence;
 
       if (op === Operation.Hello) {
         setInterval(
@@ -69,7 +70,7 @@ const Doing = (
 
         if ([EventType.INIT_STATE, EventType.PRESENCE_UPDATE].includes(t)) {
           setDoing(d as Presence); 
-          setSpotify(d.spotify || defaultSpotify)
+          setSpotify(spotify as Spotify || defaultSpotify)
         } 
       }
     };
@@ -104,13 +105,13 @@ const Doing = (
           <>
             <ActivityRow>
               <ActivityImageContainer>
-                <ActivityImage src={spotify.album_art_url} />
+                <ActivityImage src={spotify?.album_art_url} />
                 <ActivitySecondaryImage src={SpotifyLogo} />
               </ActivityImageContainer>
 
               <ActivityInfo>
-                <h5>{spotify.song}</h5>
-                <p>by {spotify.artist}</p>
+                <h5>{spotify?.song}</h5>
+                <p>by {spotify?.artist}</p>
               </ActivityInfo>
             </ActivityRow>
           </>

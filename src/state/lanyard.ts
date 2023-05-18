@@ -17,4 +17,4 @@ export const defaultSpotify = {
   album: 'Echoes Of Life: Night',
 };
 
-export const spotifyAtom = atomWithStorage('spotify', <Spotify | null>(null));
+export const spotifyAtom = atomWithStorage('spotify', <Spotify | null>({}));

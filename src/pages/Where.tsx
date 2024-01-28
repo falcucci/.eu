@@ -25,7 +25,7 @@ const Where = () => {
           name="TxPipe"
           iconReference={TxPipeIcon}
           tagline="Blockchain Open Source Tools"
-          role={'Senior Software Engineer'}
+          role={'Software Engineer'}
           what={`
           Active contribution to the Cardano community through the latest advancements abreast blockchain open-source projects, thriving on leveraging blockchain technology as a catalyst for building a more transparent, equitable and decentralized world.`}
         />

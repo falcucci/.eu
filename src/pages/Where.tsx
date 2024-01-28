@@ -1,6 +1,7 @@
 import PageWrapper from './PageWrapper';
 import Co from '../components/Co';
 import styled from 'styled-components';
+import TxPipeIcon from '../assets/images/txpipe-logo.png';
 import DefenceLabsIcon from '../assets/images/bd-logo.png';
 import MagaluIcon from '../assets/images/magalu.jpg';
 import AnchorLoansIcon from '../assets/images/anchor.jpg';
@@ -20,12 +21,21 @@ const Where = () => {
       <h3>Companies</h3>
       <CoWrapper>
         <Co
+          url="https://txpipe.io"
+          name="TxPipe"
+          iconReference={TxPipeIcon}
+          tagline="Blockchain Open Source Tools"
+          role={'Senior Software Engineer'}
+          what={`
+          Active contribution to the Cardano community through the latest advancements abreast blockchain open-source projects, thriving on leveraging blockchain technology as a catalyst for building a more transparent, equitable and decentralized world.`}
+        />
+        <Co
           url="https://www.businessdefence.it/en"
           name="Defence Labs"
           iconReference={DefenceLabsIcon}
           tagline="Computer & Network Security"
           role={'Senior Software Engineer & Core Developer'}
-          pretext={'Currently'}
+          pretext={'2023'}
           what={`
  Rebuilding the IT department from scratch drived by creating fast and innovative projects using the most up-to-date technologies in a serverless environment, releasing new products and integrations, making them also accessible through developer tools.`}
         />

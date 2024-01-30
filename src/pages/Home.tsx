@@ -19,9 +19,9 @@ const Home = () => {
         y/o software engineer, innovator and open-source enthusiast.
       </p>
       <p>
-        I design, build and publish products of quality and reliability - currently on{' '}
-        <a href="https://github.com/defence-labs?type=source" target="norel noopen">
-          Defence Labs
+        I design, build and publish open-source projects - currently on{' '}
+        <a href="https://github.com/txpipe" target="norel noopen">
+          TxPipe
         </a>{' '}
         as a core Software Engineer.
       </p>

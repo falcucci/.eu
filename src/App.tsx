@@ -16,7 +16,7 @@ import { ChevronsRight } from './components/Icons';
 const shouldPlayIntro = window.location.pathname === '/';
 
 function App() {
-  const [introEnded, setIntroEnded] = useState(!shouldPlayIntro);
+  const [introEnded, setIntroEnded] = useState(shouldPlayIntro);
 
   const onKeyDown = (e: KeyboardEvent<HTMLDocument> & any) => {
     if ((e.keyCode === 9 || e.which === 9) && !introEnded) {
@@ -49,7 +49,7 @@ function App() {
       </Helmet>
       {shouldPlayIntro ? (
         <SuccessiveTypeContainer
-          transition={{ duration: 0.85 }}
+          transition={{ duration: 0 }}
           animate={{ y: introEnded ? -window.innerHeight : 0 }}
         >
           <ProgressContainer onClick={onIntroEnd}>

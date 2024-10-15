@@ -23,7 +23,7 @@ const Home = () => {
         <a href="https://github.com/txpipe" target="norel noopen">
           TxPipe
         </a>{' '}
-        as a core Software Engineer.
+        as a core Rust Software Engineer.
       </p>
       <p>
         I have had a wealth of growing opportunities over several industries and one thing never

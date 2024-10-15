@@ -6,6 +6,7 @@ import DefenceLabsIcon from '../assets/images/bd-logo.png';
 import MagaluIcon from '../assets/images/magalu.jpg';
 import AnchorLoansIcon from '../assets/images/anchor.jpg';
 import MagaluPay from '../assets/images/magalupay.jpg';
+import IOG from '../assets/images/input-output-global.jpeg';
 import GigglAppIcon from '../assets/images/giggl-app-icon.jpg';
 import HonkAppIcon from '../assets/images/honk-app-icon.jpg';
 import Repo from '../components/Repo';
@@ -25,16 +26,26 @@ const Where = () => {
           name="TxPipe"
           iconReference={TxPipeIcon}
           tagline="Blockchain Open Source Tools"
-          role={'Software Engineer'}
+          role={'Rust Software Engineer'}
           what={`
           Active contribution to the Cardano community through the latest advancements abreast blockchain open-source projects, thriving on leveraging blockchain technology as a catalyst for building a more transparent, equitable and decentralized world.`}
+        />
+        <Co
+          url="https://iohk.io"
+          name="Input Output (IOHK)"
+          iconReference={IOG}
+          tagline="Blockchain Research and Engineering"
+          role={'Rust Software Engineer'}
+          pretext={'2023-2024'}
+          what={`
+            Rust Open-source contributor to the Mithril project, a research project whose goal is to provide Stake-based Threshold Multisignatures on top of the Cardano network.`}
         />
         <Co
           url="https://www.businessdefence.it/en"
           name="Defence Labs"
           iconReference={DefenceLabsIcon}
           tagline="Computer & Network Security"
-          role={'Senior Software Engineer & Core Developer'}
+          role={'Rust Software Engineer & Core Developer'}
           pretext={'2023'}
           what={`
  Rebuilding the IT department from scratch drived by creating fast and innovative projects using the most up-to-date technologies in a serverless environment, releasing new products and integrations, making them also accessible through developer tools.`}

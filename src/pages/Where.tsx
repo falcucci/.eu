@@ -38,7 +38,7 @@ const Where = () => {
           role={'Rust Software Engineer'}
           pretext={'2023-2024'}
           what={`
-            Rust Open-source contributor to the Mithril project, research project whose goal is to provide Stake-based Threshold Multisignatures on top of the Cardano network.`}
+            Open-source contributor to the Mithril, a research project whose goal is to provide Stake-based Threshold Multisignatures on top of the blockchain network.`}
         />
         <Co
           url="https://www.businessdefence.it/en"

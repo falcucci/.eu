@@ -5,7 +5,7 @@ import PageWrapper from './PageWrapper';
 const BIRTH = new Date('1993-04-30T05:30:00Z');
 const YEAR_MILLIS = 31556952000;
 
-const Home = () => {
+const What = () => {
   const age = useMemo(() => Math.floor((Date.now() - BIRTH.getTime()) / YEAR_MILLIS), []);
 
   return (
@@ -20,6 +20,10 @@ const Home = () => {
       </p>
       <p>
         I design, build and publish open-source projects - currently on{' '}
+        <a href="https://github.com/neovide/neovide" target="norel noopen">
+          Neovide
+        </a>{' '}
+        and{' '}
         <a href="https://github.com/txpipe" target="norel noopen">
           TxPipe
         </a>{' '}
@@ -77,4 +81,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default What;

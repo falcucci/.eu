@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import SuccessiveType from './components/SuccessiveType';
 import Nav from './components/Nav';
-import Home from './pages/Home';
+import What from './pages/What';
 import Where from './pages/Where';
 import How from './pages/How';
 import Etc from './pages/Etc';
@@ -85,7 +85,7 @@ function App() {
           <ContentWrapper>
             <AnimatePresence>
               <Switch>
-                <Route exact path="/" component={Home} />
+                <Route exact path="/" component={What} />
                 <Route exact path="/where" component={Where} />
                 <Route exact path="/how" component={How} />
                 <Route exact path="/etc" component={Etc} />

@@ -20,10 +20,6 @@ const What = () => {
       </p>
       <p>
         I design, build and publish open-source projects - currently on{' '}
-        <a href="https://github.com/neovide/neovide" target="norel noopen">
-          Neovide
-        </a>{' '}
-        and{' '}
         <a href="https://github.com/txpipe" target="norel noopen">
           TxPipe
         </a>{' '}

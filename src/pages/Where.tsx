@@ -104,13 +104,13 @@ const Where = () => {
         name={'hyper-jump'}
         url={'https://github.com/falcucci/hyper-jump'}
         primaryLanguage={'Rust'}
-        description="A comprehensive API for Formula 1 World Championship data. It allows developers to quickly access data from the world's premier motor racing competition. "
+        description="The aircraft ready to hyper-jump: a generalist all-in-one and cross-platform command-line version manager toolset for a more efficient development workflow."
       />
       <Repo
         name={'changelog-it'}
         url={'https://github.com/falcucci/changelog-it'}
         primaryLanguage={'Rust'}
-        description="A simple React Native native module for invoking `Activity.startActivityForResults`, `Activity.setResults`, and `Activity.finish` to help with implementing app-to-app communication."
+        description="Rust crate and cli that generates clear github releases based on milestones, including merged pull requests, contributors and organized by topics."
       />
       <Repo
         name={'dicomcrop'}

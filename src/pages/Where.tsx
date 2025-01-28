@@ -51,12 +51,25 @@ const Where = () => {
  Rebuilding the IT department from scratch drived by creating fast and innovative projects using the most up-to-date technologies in a serverless environment, releasing new products and integrations, making them also accessible through developer tools.`}
         />
         <Co
+          url="https://www.anchorloans.com"
+          name="Anchor Loans"
+          iconReference={AnchorLoansIcon}
+          tagline="Financial Services"
+          role={'Senior Software Engineer & Core Developer'}
+          pretext={'2022-2019'}
+          what={`- Development of systems controlling the buying and selling processes of properties owned by the company. 
+- Developed a subsystem for neighbor property comparison.
+- Developed web scrapers and internal ETL tools.
+- Developed a system for property construction process management.
+- Experimented with different data structures to maintain a large database efficiently.`}
+        />
+        <Co
           url="https://www.magazineluiza.com.br"
           name="Magazine Luiza"
           iconReference={MagaluIcon}
           tagline="Retail Company"
           role={'Senior Software Engineer & Core Developer'}
-          pretext={'2018-2022'}
+          pretext={'2019-2022'}
           what={`- Responsibilities include product development from the software development perspective, addressing performance or security concerns, as well as acting as architect.
 - High scalable, high impact products through the use of technology, team work and best software engineering practices in high collaborative and challenging environments.
 - At times my role included helping devops or using my previous data-engineering experience to help with developing analytics systems. Though the title suggests more programming-oriented work, much of my time is spent with architectural changes, or advising other developers or staff on possible ways to proceed toward a goal.`}
@@ -71,19 +84,6 @@ const Where = () => {
           what={
             '- Development of the core features that a digital bank would have to be succeed such as payment ransactions, payments by QRcode, external links, wallet account services and even cashback rules. Also responsible to create Integrations with third-parties partners and internal-company apps.'
           }
-        />
-        <Co
-          url="https://www.anchorloans.com"
-          name="Anchor Loans"
-          iconReference={AnchorLoansIcon}
-          tagline="Financial Services"
-          role={'Senior Software Engineer & Core Developer'}
-          pretext={'2018-2015'}
-          what={`- Development of systems controlling the buying and selling processes of properties owned by the company. 
-- Developed a subsystem for neighbor property comparison.
-- Developed web scrapers and internal ETL tools.
-- Developed a system for property construction process management.
-- Experimented with different data structures to maintain a large database efficiently.`}
         />
       </CoWrapper>
 

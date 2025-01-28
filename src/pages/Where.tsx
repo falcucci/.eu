@@ -107,6 +107,12 @@ const Where = () => {
         description="The aircraft ready to hyper-jump: a generalist all-in-one and cross-platform command-line version manager toolset for a more efficient development workflow."
       />
       <Repo
+        name={'harvest-moon'}
+        url={'https://github.com/falcucci/harvest-moon'}
+        primaryLanguage={'Rust'}
+        description="A Substrate community-based and platform agnostic for fact-checking governance system."
+      />
+      <Repo
         name={'changelog-it'}
         url={'https://github.com/falcucci/changelog-it'}
         primaryLanguage={'Rust'}

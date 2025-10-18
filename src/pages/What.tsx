@@ -20,10 +20,10 @@ const What = () => {
       </p>
       <p>
         I design, build and publish open-source projects - currently on{' '}
-        <a href="https://github.com/txpipe" target="norel noopen">
-          TxPipe
+        <a href="https://github.com/PlasmaLaboratories" target="norel noopen">
+          Plasma
         </a>{' '}
-        as a core Rust Software Engineer.
+        as a core Rust Protocol Engineer.
       </p>
       <p>
         I have had a wealth of growing opportunities over several industries and one thing never

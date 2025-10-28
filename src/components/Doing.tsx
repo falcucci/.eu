@@ -5,6 +5,7 @@ import styled, { keyframes } from 'styled-components';
 import { Presence, Spotify } from '../types/lanyard';
 import SpotifyLogo from '../assets/images/spotify-logo.svg';
 import AppleLogo from '../assets/images/apple-logo.svg';
+import Neovim from '../assets/images/neovim.png';
 import { useAtom } from 'jotai';
 import { doingAtom, spotifyAtom, defaultSpotify } from '../state/lanyard';
 
@@ -69,9 +70,9 @@ const Doing = (
         logLanyardEvent(t, d);
 
         if ([EventType.INIT_STATE, EventType.PRESENCE_UPDATE].includes(t)) {
-          setDoing(d as Presence); 
-          setSpotify(spotify as Spotify || defaultSpotify)
-        } 
+          setDoing(d as Presence);
+          setSpotify((spotify as Spotify) || defaultSpotify);
+        }
       }
     };
 
@@ -97,7 +98,7 @@ const Doing = (
 
   return (
     <>
-      {(
+      {
         <Container ref={ref} {...props}>
           <h5>
             Listening to Spotify <LiveDot />
@@ -116,27 +117,25 @@ const Doing = (
             </ActivityRow>
           </>
         </Container>
-      )}
-      {(
+      }
+      {
         <Container {...props}>
           <h5>Doing something</h5>
           <ActivityRow>
-            {(
+            {
               <ActivityImageContainer>
-                <ActivityImage
-                  src={`https://cdn.discordapp.com/app-assets/383226320970055681/565945077491433494.png`}
-                />
+                <ActivityImage src={Neovim} />
                 <ActivitySecondaryImage src={AppleLogo} />
               </ActivityImageContainer>
-            ) }
+            }
             <ActivityInfo>
-              <h5>{'Vim'}</h5>
+              <h5>{'Neovide'}</h5>
               <p>{'Editing README.md'}</p>
               <p>{'~/personal/dicomcrop'}</p>
             </ActivityInfo>
           </ActivityRow>
         </Container>
-      )}
+      }
     </>
   );
 };

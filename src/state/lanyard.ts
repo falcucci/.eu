@@ -11,10 +11,10 @@ export const defaultSpotify = {
     start: 1684416176408,
     end: 1684416391658,
   },
-  song: 'The Way',
-  artist: 'Sultan + Shepard',
-  album_art_url: 'https://i.scdn.co/image/ab67616d0000b273c2d680d3ca07020db799d627',
-  album: 'Echoes Of Life: Night',
+  song: 'Sunset',
+  artist: 'The Midnight',
+  album_art_url: 'https://i.scdn.co/image/ab67616d0000b27366f27b0ef0b92099a1927721',
+  album: 'Endless Summer',
 };
 
-export const spotifyAtom = atomWithStorage('spotify', <Spotify | null>({}));
+export const spotifyAtom = atomWithStorage('spotify', <Spotify | null>{});

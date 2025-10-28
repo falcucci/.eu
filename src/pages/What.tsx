@@ -20,7 +20,7 @@ const What = () => {
       </p>
       <p>
         I design, build and publish open-source projects - currently on{' '}
-        <a href="https://github.com/PlasmaLaboratories" target="norel noopen">
+        <a href="https://www.plasma.to" target="norel noopen">
           Plasma
         </a>{' '}
         as a core Rust Protocol Engineer.

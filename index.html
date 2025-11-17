@@ -33,6 +33,13 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
-    <script defer src="/_vercel/insights/script.js"></script>
+    <script type="module">
+      if (import.meta.env.PROD) {
+        const script = document.createElement('script');
+        script.defer = true;
+        script.src = '/_vercel/insights/script.js';
+        document.head.appendChild(script);
+      }
+    </script>
   </body>
 </html>

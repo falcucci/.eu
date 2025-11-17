@@ -16,6 +16,7 @@
     "@types/react-helmet": "^6.1.0",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.26",
+    "caniuse-lite": "^1.0.30001755",
     "framer-motion": "^8.5.0",
     "is-svg": "4.2.2",
     "jotai": "^1.4.4",

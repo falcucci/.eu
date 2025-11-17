@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { forwardRef, useEffect, useMemo, useState } from 'react';
-import { Link } from 'react-router-dom';
 import styled, { keyframes } from 'styled-components';
 import { Presence, Spotify } from '../types/lanyard';
 import SpotifyLogo from '../assets/images/spotify-logo.svg';
@@ -85,10 +84,10 @@ const Doing = (
     if (!socket) setSocket(new WebSocket('wss://api.lanyard.rest/socket'));
   }, [socket]);
 
-  const currentActivity = useMemo(
-    () => doing?.activities.filter((activity) => activity.type === 0)[0],
-    [doing]
-  );
+  const currentActivity = useMemo(() => {
+    if (!doing?.activities?.length) return undefined;
+    return doing.activities.find((activity) => activity.type === 0);
+  }, [doing]);
 
   useEffect(() => {
     setActive(true);
@@ -140,7 +139,7 @@ const Doing = (
   );
 };
 
-const Container = styled(motion(Link))`
+const Container = styled(motion.div)`
   width: calc(100% + 2rem);
   margin-left: -2rem;
   background-color: transparent;

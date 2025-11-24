@@ -301,10 +301,19 @@ const Page = styled(Link)<{ active: number }>`
     active ? 'hsl(var(--primary-900))' : 'hsl(var(--primary-200))'};
   padding: 10px 0px;
   display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-start;
+  text-align: left;
   border-bottom: none;
 
   &:hover {
     color: hsl(var(--primary-900));
+  }
+
+  @media (min-width: 850px) {
+    justify-content: center;
+    text-align: center;
   }
 `;
 

@@ -108,15 +108,17 @@ const Nav = ({ theme, onToggleTheme }: NavProps) => {
           />
         ) : null}
         <Items>
-          {!openOnMobile ? (
-            <Row>
-              <Title>Alexsander Falcucci</Title>
-            </Row>
-          ) : null}
-          <ProfileCard>
-            <ProfilePhoto src={PROFILE_PHOTO_URL} alt="Alexsander Falcucci" />
-            <ProfileCaption>Protocol Software Engineer</ProfileCaption>
-          </ProfileCard>
+          {!openOnMobile && (
+            <>
+              <Row>
+                <Title>Alexsander Falcucci</Title>
+              </Row>
+              <ProfileCard>
+                <ProfilePhoto src={PROFILE_PHOTO_URL} alt="Alexsander Falcucci" />
+                <ProfileCaption>Protocol Software Engineer</ProfileCaption>
+              </ProfileCard>
+            </>
+          )}
           <Row>
             <Location
               target="_blank"
@@ -131,11 +133,13 @@ const Nav = ({ theme, onToggleTheme }: NavProps) => {
               {'Milan, Italy'}
             </Location>
           </Row>
-          <ThemeControls>
-            <ThemeToggle type="button" onClick={onToggleTheme} aria-pressed={theme === 'dark'}>
-              {theme === 'dark' ? 'Light mode' : 'Dark mode'}
-            </ThemeToggle>
-          </ThemeControls>
+          {!openOnMobile && (
+            <ThemeControls>
+              <ThemeToggle type="button" onClick={onToggleTheme} aria-pressed={theme === 'dark'}>
+                {theme === 'dark' ? 'Light mode' : 'Dark mode'}
+              </ThemeToggle>
+            </ThemeControls>
+          )}
           <div ref={dragConstraintsRef}>
             <Page active={pathname === '/' ? 1 : 0} to="/">
               what I do
@@ -260,7 +264,7 @@ const Location = styled.a`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-weight: 500;
   height: auto;
   font-size: 14px;
@@ -269,6 +273,15 @@ const Location = styled.a`
   text-align: center;
   color: hsl(var(--primary-900));
   border-bottom: none;
+
+  @media (min-width: 850px) {
+    justify-content: center;
+    text-align: center;
+  }
+
+  @media (max-width: 850px) {
+    text-align: left;
+  }
 
   &:hover {
     color: hsl(var(--primary-800));

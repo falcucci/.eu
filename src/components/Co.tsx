@@ -1,14 +1,5 @@
-import { animated, useSpring } from 'react-spring';
 import styled from 'styled-components';
 import { ExternalLinkIcon } from './Icons';
-
-const calc = (x: number, y: number) => [
-  -(y - window.innerHeight / 2) / 200,
-  -(x - window.innerWidth / 2) / 200,
-  1.05,
-];
-const trans = (x: number, y: number, s: number): string =>
-  `perspective(200px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
 const Co = ({
   url,
@@ -29,21 +20,9 @@ const Co = ({
   acquired?: boolean;
   pretext?: string;
 }) => {
-  const [props, set] = useSpring(() => ({
-    xys: [0, 0, 1],
-    config: { mass: 2, tension: 350, friction: 40 },
-  }));
-
   return (
     <A href={url} target="_blank" rel="noopener">
-      <Container
-        onMouseMove={({ clientX: x, clientY: y }: { clientX: number; clientY: number }) =>
-          set({ xys: calc(x, y) })
-        }
-        onMouseLeave={() => set({ xys: [0, 0, 1] })}
-        //@ts-ignore
-        style={{ transform: props.xys.interpolate(trans) }}
-      >
+      <Container>
         <Header>
           <img alt={`${name} Logo`} draggable={false} src={iconReference} />
           <div>
@@ -74,17 +53,11 @@ const A = styled.a`
   }
 `;
 
-const Container = styled(animated.div)`
+const Container = styled.div`
   border: 1px solid hsl(var(--primary-800));
   border-radius: 10px;
   cursor: pointer;
-  transition: all 0.1s ease;
   height: 100%;
-  will-change: transform;
-
-  &:hover {
-    background-color: hsl(var(--primary-800));
-  }
 `;
 
 const Header = styled.div`
@@ -106,7 +79,7 @@ const Header = styled.div`
   div {
     sub {
       text-transform: uppercase;
-      color: #ff65b2;
+      color: hsl(var(--solar-high));
       letter-spacing: 2px;
     }
 
@@ -117,11 +90,11 @@ const Header = styled.div`
     svg {
       width: 15px;
       height: 15px;
-      color: #ccc;
+      color: hsl(var(--primary-200));
     }
 
     span {
-      color: #ccc;
+      color: hsl(var(--primary-200));
     }
   }
 `;

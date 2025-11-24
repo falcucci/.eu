@@ -75,10 +75,11 @@ const Container = styled.div`
   @media (max-width: 850px) {
     flex-direction: column;
     height: auto;
+    width: 100%;
   }
 
   &:hover {
-    background-color: hsl(var(--primary-800));
+    background-color: hsl(var(--accent-100));
   }
 `;
 
@@ -97,24 +98,24 @@ const Column = styled.div<{ forceWidth?: number; noBorder?: boolean }>`
   flex-shrink: ${({ noBorder }) => (noBorder ? undefined : 0)};
 
   @media (max-width: 850px) {
-    height: 50px;
     width: 100%;
     border-bottom: 1px solid
       ${({ noBorder }) => (noBorder ? 'transparent' : 'hsl(var(--primary-800))')};
     padding: 1rem;
     flex-shrink: 0;
-    box-sizing: content-box;
+    align-items: flex-start;
   }
 
   h5 {
     font-family: 'Courier New';
     margin: 0;
-    color: #fff;
+    color: hsl(var(--primary-200));
   }
 
   p {
     margin: 0;
     white-space: normal;
+    font-size: 0.95rem;
   }
 `;
 

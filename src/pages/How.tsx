@@ -53,10 +53,12 @@ const How = () => {
 
       <Technology
         color="#000"
-        icon={<AppleIcon />}
-        name="OS"
-        type="Unix Operating System"
-        useCase={"I strongly use the consistent apple ecosystem."}
+        icon={<RustLogo />}
+        name="Rust"
+        type="Backend, System"
+        useCase={
+          'Optimizing parts of Python and Nodejs code using Rust bindings, writing native efficient system code.'
+        }
       />
 
       <Technology
@@ -71,12 +73,10 @@ const How = () => {
 
       <Technology
         color="#000"
-        icon={<VercelLogo />}
-        name="Vercel"
-        type="Web hosting"
-        useCase={
-          'Every personal project goes here, since lambda functions til complex web applications.'
-        }
+        icon={<AppleIcon />}
+        name="OS"
+        type="Unix Operating System"
+        useCase={"I strongly use the consistent apple ecosystem."}
       />
 
       <Technology
@@ -91,11 +91,11 @@ const How = () => {
 
       <Technology
         color="#000"
-        icon={<RustLogo />}
-        name="Rust"
-        type="Backend, System"
+        icon={<VercelLogo />}
+        name="Vercel"
+        type="Web hosting"
         useCase={
-          'Optimizing parts of Python and Nodejs code using Rust bindings, writing native efficient system code.'
+          'Every personal project goes here, since lambda functions til complex web applications.'
         }
       />
 

@@ -143,19 +143,20 @@ const Container = styled(motion.div)`
   width: calc(100% + 2rem);
   margin-left: -2rem;
   background-color: transparent;
-  color: #ccc;
+  color: hsl(var(--primary-200));
   border-top: 1px solid hsl(var(--primary-800));
   padding: 1rem;
   cursor: pointer;
 
   &:hover {
-    background-color: hsl(var(--primary-800));
-    color: #fff;
+    background-color: hsl(var(--accent-100));
+    color: hsl(var(--primary-900));
   }
 
   h5 {
     margin: 0;
     margin-bottom: 10px;
+    color: hsl(var(--primary-900));
   }
 `;
 
@@ -179,7 +180,7 @@ const LiveDot = styled.div`
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #1dd05d;
+  background-color: hsl(var(--solar-high));
   animation: ${fadeInOut} 2s ease-in-out infinite;
 `;
 
@@ -207,15 +208,14 @@ const ActivitySecondaryImage = styled.img`
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: hsl(var(--primary-900));
-  border: 2px solid hsl(var(--primary-900));
+  background-color: hsl(var(--primary-50));
+  border: 2px solid hsl(var(--primary-50));
 `;
 
 const ActivityInfo = styled.div`
   margin-left: 1rem;
-
   h5 {
-    color: #fff;
+    color: hsl(var(--primary-900));
     margin: 0;
   }
 

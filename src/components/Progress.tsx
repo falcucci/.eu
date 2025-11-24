@@ -16,7 +16,7 @@ const Progress = ({ percentage }: { percentage: number }) => {
 const Container = styled.div`
   width: 100%;
   height: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid hsl(var(--primary-800));
   overflow: hidden;
   border-radius: 5px;
 `;
@@ -24,7 +24,7 @@ const Container = styled.div`
 const ProgressFill = styled(motion.div)`
   width: 100%;
   height: 5px;
-  background-color: #fff;
+  background-color: hsl(var(--solar-high));
   transform: translateX(-100%);
 `;
 

@@ -13,12 +13,12 @@ const Container = styled.button`
   border: none;
   outline: none;
   background-color: transparent;
-  color: hsl(var(--primary-200));
+  color: hsl(var(--primary-900));
   cursor: pointer;
 
   &:hover {
-    background-color: hsl(var(--primary-800));
-    color: #fff;
+    background-color: hsl(var(--accent-100));
+    color: hsl(var(--primary-900));
   }
 `;
 

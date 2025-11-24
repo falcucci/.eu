@@ -22,6 +22,13 @@ import { useAtom } from 'jotai';
 import { doingAtom } from '../state/lanyard';
 import ContentLoader from 'react-content-loader';
 
+const PROFILE_PHOTO_URL = 'https://github.com/falcucci.png?size=240';
+
+type NavProps = {
+  theme: 'light' | 'dark';
+  onToggleTheme: () => void;
+};
+
 const pathnameOffsets: { [key: string]: number } = {
   '/': 0,
   '/where': 39,
@@ -29,7 +36,7 @@ const pathnameOffsets: { [key: string]: number } = {
   '/etc': 117,
 };
 
-const Nav = () => {
+const Nav = ({ theme, onToggleTheme }: NavProps) => {
   const history = useHistory();
   const { pathname } = useLocation();
 
@@ -104,11 +111,12 @@ const Nav = () => {
           {!openOnMobile ? (
             <Row>
               <Title>Alexsander Falcucci</Title>
-              {/* <IconButton>
-              <ChevronDown />
-            </IconButton> */}
             </Row>
           ) : null}
+          <ProfileCard>
+            <ProfilePhoto src={PROFILE_PHOTO_URL} alt="Alexsander Falcucci" />
+            <ProfileCaption>Protocol Software Engineer</ProfileCaption>
+          </ProfileCard>
           <Row>
             <Location
               target="_blank"
@@ -123,7 +131,11 @@ const Nav = () => {
               {'Milan, Italy'}
             </Location>
           </Row>
-
+          <ThemeControls>
+            <ThemeToggle type="button" onClick={onToggleTheme} aria-pressed={theme === 'dark'}>
+              {theme === 'dark' ? 'Light mode' : 'Dark mode'}
+            </ThemeToggle>
+          </ThemeControls>
           <div ref={dragConstraintsRef}>
             <Page active={pathname === '/' ? 1 : 0} to="/">
               what I do
@@ -170,12 +182,13 @@ const Container = styled.aside<{ openOnMobile: boolean }>`
   left: 0;
   width: 15rem;
   border-right: 1px solid hsl(var(--primary-800));
+  background-color: hsl(var(--primary-50));
+  color: hsl(var(--primary-900));
   height: 100vh;
 
   @media (max-width: 850px) {
     display: ${({ openOnMobile }) => (openOnMobile ? 'block' : 'none')};
-    background-color: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(7px);
+    background-color: hsl(var(--primary-50));
     z-index: 1;
     top: 65px;
     width: 100%;
@@ -194,8 +207,7 @@ const MobileHeader = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: 65px;
-  background-color: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(5px);
+  background-color: hsl(var(--primary-50));
   border-bottom: 1px solid hsl(var(--primary-800));
   flex-shrink: 0;
   z-index: 1;
@@ -203,7 +215,7 @@ const MobileHeader = styled.div`
   svg {
     margin-left: auto;
     cursor: pointer;
-    color: #ccc;
+    color: hsl(var(--primary-900));
   }
 
   @media (min-width: 850px) {
@@ -214,7 +226,7 @@ const MobileHeader = styled.div`
 const PageIndicator = styled(motion.div)`
   width: 1px;
   height: 39px;
-  background-color: #fff;
+  background-color: hsl(var(--primary-900));
   position: absolute;
   right: -1px;
   cursor: pointer;
@@ -236,61 +248,126 @@ const Row = styled.div`
 const Title = styled.div`
   font-weight: 600;
   padding: 10px 0px;
+  width: 100%;
+
+  @media (min-width: 850px) {
+    text-align: center;
+  }
 `;
 
 const Location = styled.a`
   width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
+  justify-content: center;
   font-weight: 500;
-  height: 19px;
+  height: auto;
   font-size: 14px;
   margin-bottom: 15px;
   user-select: none;
-
-  color: white;
+  text-align: center;
+  color: hsl(var(--primary-900));
+  border-bottom: none;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: hsl(var(--primary-800));
   }
 
   svg:first-child {
-    height: 18px;
-    width: 18px;
-    margin-right: 10px;
-    color: #ff65b2;
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    color: hsl(var(--solar-high));
   }
 `;
 
 const Page = styled(Link)<{ active: number }>`
-  color: ${({ active }) => (active ? '#fff' : '#ccc')};
+  color: ${({ active }) =>
+    active ? 'hsl(var(--primary-900))' : 'hsl(var(--primary-200))'};
   padding: 10px 0px;
   display: flex;
+  border-bottom: none;
 
   &:hover {
-    /* background-color: #fff; */
-    color: #fff;
+    color: hsl(var(--primary-900));
   }
 `;
 
 const Icons = styled.div`
   margin-top: auto;
-  color: #ccc;
+  color: hsl(var(--primary-200));
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem 0;
 
+  a {
+    border-bottom: none;
+  }
+
   svg {
     width: 20px;
     height: 20px;
     cursor: pointer;
-    color: #ccc;
+    color: inherit;
 
     &:hover {
-      color: #fff;
+      color: hsl(var(--primary-900));
     }
+  }
+`;
+
+const ProfileCard = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 1rem 0;
+`;
+
+const ProfilePhoto = styled.img`
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 3px solid hsl(var(--primary-50));
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+  background-color: hsl(var(--primary-50));
+`;
+
+const ProfileCaption = styled.p`
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  color: hsl(var(--primary-900));
+`;
+
+const ThemeControls = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+  flex-wrap: wrap;
+`;
+
+const ThemeToggle = styled.button`
+  padding: 0.35rem 1rem;
+  border: 1px solid hsl(var(--primary-800));
+  border-radius: 999px;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.65rem;
+  background-color: transparent;
+  color: hsl(var(--primary-900));
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+
+  &:hover {
+    background-color: hsl(var(--accent-100));
   }
 `;
 

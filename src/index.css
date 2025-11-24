@@ -1,24 +1,39 @@
 body {
   margin: 0;
-  font-family: 'Karla', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
-    'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Times New Roman', 'Georgia', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: hsl(var(--primary-900));
-  color: hsl(var(--primary-50));
+  background-color: hsl(var(--primary-50));
+  color: hsl(var(--primary-900));
+  line-height: 1.5;
   overflow: hidden;
 }
 
 ::selection {
-  background-color: hsl(var(--primary-200));
+  background-color: hsl(var(--accent-100));
   color: hsl(var(--primary-900));
 }
 
 :root {
-  --primary-900: 0, 0%, 0%;
-  --primary-800: 0, 0%, 9%;
-  --primary-200: 0, 0%, 80%;
-  --primary-50: 0, 0%, 95%;
+  --primary-900: 0, 0%, 10%;
+  --primary-800: 0, 0%, 32%;
+  --primary-200: 0, 0%, 52%;
+  --primary-50: 47, 100%, 91%;
+  --accent-100: 208, 100%, 97%;
+  --solar-low: 231, 77%, 38%;
+  --solar-high: 12, 68%, 45%;
+  --solar-obs: 166, 100%, 21%;
+}
+
+[data-theme='dark'] {
+  --primary-900: 46, 87%, 90%;
+  --primary-800: 46, 45%, 70%;
+  --primary-200: 46, 32%, 65%;
+  --primary-50: 232, 23%, 10%;
+  --accent-100: 232, 22%, 18%;
+  --solar-low: 231, 70%, 68%;
+  --solar-high: 14, 86%, 64%;
+  --solar-obs: 158, 45%, 56%;
 }
 
 code {
@@ -26,10 +41,15 @@ code {
 }
 
 a {
-  color: #ff65b2;
+  color: hsl(var(--primary-900));
   text-decoration: none;
+  border-bottom: 1px solid hsl(var(--primary-900));
+}
+
+a:hover {
+  color: hsl(var(--primary-800));
 }
 
 p {
-  color: hsl(var(--primary-200));
+  color: hsl(var(--primary-900));
 }

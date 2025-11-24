@@ -13,16 +13,47 @@ import Presence from './pages/Presence';
 import Sakurajima from './pages/Sakurajima';
 import { ChevronsRight } from './components/Icons';
 
-const shouldPlayIntro = window.location.pathname === '/';
+const shouldPlayIntro = false;
+const THEME_COLORS: Record<'light' | 'dark', string> = {
+  light: '#fff5d1',
+  dark: '#12131f',
+};
+
+const getPreferredTheme = (): 'light' | 'dark' => {
+  if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') {
+    return 'light';
+  }
+
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+};
 
 function App() {
-  const [introEnded, setIntroEnded] = useState(shouldPlayIntro);
+  const [introEnded, setIntroEnded] = useState(!shouldPlayIntro);
+  const [systemTheme, setSystemTheme] = useState<'light' | 'dark'>(() => getPreferredTheme());
+  const [themePreference, setThemePreference] = useState<'system' | 'light' | 'dark'>('system');
+  const [theme, setTheme] = useState<'light' | 'dark'>(() => systemTheme);
 
   const onKeyDown = (e: KeyboardEvent<HTMLDocument> & any) => {
     if ((e.keyCode === 9 || e.which === 9) && !introEnded) {
       e.preventDefault();
     }
   };
+
+  useEffect(() => {
+    if (typeof document === 'undefined') return;
+    document.documentElement.setAttribute('data-theme', theme);
+    let themeMeta = document.querySelector('meta[name="theme-color"]') as HTMLMetaElement | null;
+    if (!themeMeta) {
+      themeMeta = document.createElement('meta');
+      themeMeta.setAttribute('name', 'theme-color');
+      document.head.appendChild(themeMeta);
+    }
+    themeMeta.setAttribute('content', THEME_COLORS[theme]);
+  }, [theme]);
+
+  useEffect(() => {
+    setTheme(themePreference === 'system' ? systemTheme : themePreference);
+  }, [themePreference, systemTheme]);
 
   useEffect(() => {
     if (!shouldPlayIntro) return;
@@ -41,6 +72,31 @@ function App() {
     localStorage.setItem('v1:intro-completed', 'true');
     setIntroEnded(true);
   }, []);
+
+  useEffect(() => {
+    if (typeof window === 'undefined' || typeof window.matchMedia === 'undefined') {
+      return;
+    }
+
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    const handler = (event: MediaQueryListEvent) => {
+      setSystemTheme(event.matches ? 'dark' : 'light');
+      setThemePreference('system');
+    };
+    setSystemTheme(mediaQuery.matches ? 'dark' : 'light');
+    mediaQuery.addEventListener('change', handler);
+
+    return () => mediaQuery.removeEventListener('change', handler);
+  }, []);
+
+  const toggleThemePreference = useCallback(() => {
+    setThemePreference((prev) => {
+      if (prev === 'system') {
+        return systemTheme === 'dark' ? 'light' : 'dark';
+      }
+      return prev === 'dark' ? 'light' : 'dark';
+    });
+  }, [systemTheme]);
 
   return (
     <Wrapper>
@@ -62,7 +118,6 @@ function App() {
             words={
               "Software was meant to be light and feel effortless to use. As we're all developing new products so rapidly, bloat in our code is catching up with us. I design simple but effective, highly-scalable and realtime products for the future."
             }
-            speed={1}
             userSkipped={introEnded}
           />
         </SuccessiveTypeContainer>
@@ -80,7 +135,7 @@ function App() {
         animate={{ y: !introEnded ? window.innerHeight : 0 }}
       >
         <Router>
-          <Nav />
+          <Nav theme={theme} onToggleTheme={toggleThemePreference} />
 
           <ContentWrapper>
             <AnimatePresence>
@@ -117,7 +172,7 @@ const Wrapper = styled.div`
 `;
 
 const SuccessiveTypeContainer = styled(motion.div)`
-  width: 65ch;
+  width: 80vw;
   height: 350px;
   padding: 2rem;
   position: relative;
@@ -135,7 +190,7 @@ const ProgressContainer = styled.div`
   }
 
   &:hover {
-    color: #ff65b2;
+    color: hsl(var(--solar-high));
   }
 `;
 

@@ -50,7 +50,7 @@ const Container = styled.div`
   }
 
   &:hover {
-    background-color: hsl(var(--primary-800));
+    background-color: hsl(var(--accent-100));
   }
 `;
 
@@ -60,8 +60,11 @@ const Head = styled.div<{ color: string }>`
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #fff;
-  background-color: ${({ color }) => color};
+  background-color: ${({ color }) =>
+    color === '#fff' ? 'hsl(var(--accent-100))' : 'hsl(var(--solar-low))'};
+  color: ${({ color }) =>
+    color === '#fff' ? 'hsl(var(--primary-900))' : 'hsl(var(--primary-50))'};
+  fill: currentColor;
   flex-shrink: 0;
 
   @media (max-width: 850px) {
@@ -72,6 +75,11 @@ const Head = styled.div<{ color: string }>`
   svg {
     height: 30px;
     width: 30px;
+  }
+
+  svg * {
+    fill: currentColor;
+    stroke: currentColor;
   }
 `;
 
@@ -102,7 +110,7 @@ const Column = styled.div<{ forceWidth?: number; noBorder?: boolean }>`
   h5 {
     font-family: 'Courier New';
     margin: 0;
-    color: #fff;
+    color: hsl(var(--primary-200));
   }
 
   p {

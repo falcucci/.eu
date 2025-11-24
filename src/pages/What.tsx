@@ -71,7 +71,6 @@ const What = () => {
         >
           dissertation.
         </a>
-        .
       </p>
     </PageWrapper>
   );

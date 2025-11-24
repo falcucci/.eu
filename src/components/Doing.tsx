@@ -214,14 +214,23 @@ const ActivitySecondaryImage = styled.img`
 
 const ActivityInfo = styled.div`
   margin-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50px;
   h5 {
     color: hsl(var(--primary-900));
     margin: 0;
+    font-size: 0.95rem;
   }
 
   p {
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+
+    &:last-child {
+      font-family: 'Courier New', Courier, monospace;
+    }
   }
 `;
 
